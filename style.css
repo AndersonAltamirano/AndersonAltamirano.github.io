@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0;
+
+    
+}
+.container{
+    display: flex;
+    background-color: rgb(200, 216, 216);
+    justify-content: space-between;
+    border: 1px solid black;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+ 
+}
+.logo{
+    font-family: 'Pacifico', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 10px;
+    
+}
+.logos{
+    display: flex;
+    margin-left: 20px;
+}
+.panda{
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+    margin-left: 10px;
+ 
+}
+.opcion{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Pacifico', sans-serif;
+    color: black;
+}
+.buscador{
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-image: url(Imagenes/street-art-2254146.jpg);
+    background-size: cover;
+}
+.formulario{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    border-radius: 15px;
+    width: 15%;
+    height: 30px;
+    background-color: rgb(248, 248, 248);
+
+}
+/* comentario de prueba */
+.botonBuscar{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.recomendados{
+    border-right: 1px solid black ;
+    width: 35%;
+    margin-top: 0px;
+    height: 1000px;
+}
+.recomendadosh2{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pathway Gothic One', sans-serif;  
+}
+#carru{
+    margin: 0 auto;
+    width:90%;
+    display: flex;
+}
+.centro{
+    display: flex;
+    background-color: #fff;
+    height: 1000px;
+}
+.reproductor{
+    width: 65%;
+    justify-content: center;
+
+   
+}
+.seguir{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.videos{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+.vermas{
+    color:  rgb(156, 230, 230);
+    text-decoration: none;
+}
+.vidrecs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: center;
+}
+.vidrec{
+    width: 40%;
+    padding: 10px;
+   
+}
