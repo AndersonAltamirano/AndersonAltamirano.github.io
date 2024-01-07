@@ -6,7 +6,7 @@ body{
 }
 .container{
     display: flex;
-    background-color: rgb(200, 216, 216);
+    background-color: #838383;
     justify-content: space-between;
     border: 1px solid black;
 
@@ -18,7 +18,7 @@ ul{
 }
 .logo{
     font-family: 'Pacifico', cursive;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 25px;
     margin-top: 10px;
@@ -39,8 +39,9 @@ ul{
     display: inline-block;
     padding: 20px;
     text-decoration: none;
-    font-family: 'Pacifico', sans-serif;
-    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 .buscador{
     border-bottom-left-radius:10px;
@@ -49,7 +50,7 @@ ul{
     height: 125px;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     background-image: url(Imagenes/street-art-2254146.jpg);
     background-size: cover;
 }
@@ -63,27 +64,31 @@ ul{
     border-radius: 15px;
     width: 15%;
     height: 30px;
-    background-color: rgb(248, 248, 248);
+    background-color: #2c2c2c;
+    border: 1px solid white;
 
 }
 /* comentario de prueba */
 .botonBuscar{
-    background-color: rgb(255, 255, 255);
+    background-color: #2c2c2c;
+    color: white;
     border-radius: 10px;
     width: 100px;
     margin-left: 10px;
     font-weight: bold;
+    border: 1px solid white;
 }
 .recomendados{
-    border-right: 1px solid black ;
+    border-right: 1px solid white ;
     width: 35%;
     margin-top: 0px;
-    height: 1000px;
+    height: 1500px;
 }
 .recomendadosh2{
     text-align: center;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Pathway Gothic One', sans-serif;  
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 #carru{
     margin: 0 auto;
@@ -93,8 +98,8 @@ ul{
 }
 .centro{
     display: flex;
-    background-color: #fff;
-    height: 1000px;
+    background-color: black;
+    height: 1500px;
 }
 .reproductor{
     width: 65%;
@@ -104,8 +109,9 @@ ul{
 }
 .seguir{
     text-align: center;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 .videos{
     width: 60%;
@@ -119,7 +125,7 @@ ul{
     margin: 0 auto;
 }
 .vermas{
-    color:  rgb(156, 230, 230);
+    color:  rgb(255, 255, 255);
     text-decoration: none;
 }
 .vidrecs{
@@ -127,10 +133,15 @@ ul{
     flex-wrap: wrap;
     margin: 0 20px;
     justify-content: center;
+    
 }
 .vidrec{
     width: 40%;
+    margin: 10px;
     padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+   
    
 }
 video{
@@ -140,6 +151,10 @@ video{
    position: relative;
    width: 85%;
     margin: auto;
+}
+.imgcarru{
+    border-radius: 10px;
+    border: 3px solid white;
 }
 
 .carousel-slide {
@@ -163,18 +178,19 @@ video{
 }
 
 .number {
-    height: 15px;
-    width: 15px;
-    margin-top:225px;
-    background-color: #bbb;
+    height: 2px;
+    width: 2px;
+    margin-top:220px;
+    background-color: #aeaeae;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
 
 
 }
