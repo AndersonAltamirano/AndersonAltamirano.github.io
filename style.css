@@ -117,6 +117,7 @@ ul{
     width: 60%;
     display: block;
     margin: 0 auto;
+    box-shadow: 0 0 50px white;
 }
 .botones{
     display: flex;
@@ -200,6 +201,9 @@ video{
 .number.active {
     background-color:  white;
 }
+.vidrecs-cel{
+    display: none;
+}
 @media (max-width: 391px) {
     .search{
         width: 50%;    
@@ -223,12 +227,16 @@ video{
     .l1{
         margin-top: 275px;
     }
+    body{
+        background-color: black;
+    }
     .reproductor{
         width: 100%;
         
     }
     .videos{
         width: 90%;
+        box-shadow: 0 0 10px white;
     }
     .number{
         margin-top: 180px;
@@ -239,5 +247,18 @@ video{
     .logo{
         font-size: 20px;
         margin-top: 13px;
+    }
+    .vidrecs-cel{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 20px;
+        justify-content: center;
+        background-color: black;
+    }
+    .vidrec-cel{
+       width: 80%;
+       border-radius: 10px;
+       margin-top: 10px;
+       border: 1px solid white;
     }
 }
