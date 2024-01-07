@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .carousel-slide {
+            display: none;
+            width: 100%;
+            position: absolute;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-numbers {
+            position: absolute;
+            top: 100%; /* Colocar los números por debajo de las imágenes */
+            margin-top: 10px; /* Agregar un margen de 10px desde la parte superior */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .number {
+            height: 15px;
+            width: 15px;
+            margin-top:350px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        
+        }
+
+        .number.active {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel-slide">
+        <img src="Imagenes/foto1.jpg" alt="Imagen 1">
+    </div>
+    <div class="carousel-slide">
+        <img src="Imagenes/foto2.png" alt="Imagen 2">
+    </div>
+    <div class="carousel-slide">
+        <img src="Imagenes/foto3.png" alt="Imagen 3">
+    </div>
+
+    <div class="carousel-numbers">
+        <span class="number" onclick="currentSlide(1)">1</span>
+        <span class="number" onclick="currentSlide(2)">2</span>
+        <span class="number" onclick="currentSlide(3)">3</span>
+    </div>
+</div>
+
+<script>
+    let currentSlideIndex = 0;
+    showSlide(currentSlideIndex);
+
+    function currentSlide(n) {
+        clearInterval(slideInterval);
+        showSlide(currentSlideIndex = n - 1);
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function nextSlide() {
+        showSlide(currentSlideIndex += 1);
+    }
+
+    function showSlide(n) {
+        const slides = document.getElementsByClassName('carousel-slide');
+        const numbers = document.getElementsByClassName('number');
+
+        if (n >= slides.length) {
+            currentSlideIndex = 0;
+        }
+
+        if (n < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+
+        for (let i = 0; i < numbers.length; i++) {
+            numbers[i].className = numbers[i].className.replace(' active', '');
+        }
+
+        slides[currentSlideIndex].style.display = 'block';
+        numbers[currentSlideIndex].className += ' active';
+    }
+
+    let slideInterval = setInterval(nextSlide, 5000);
+</script>
+
+</body>
+</html>

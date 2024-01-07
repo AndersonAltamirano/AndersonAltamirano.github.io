@@ -43,8 +43,10 @@ ul{
     color: black;
 }
 .buscador{
-
-    height: 300px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+   
+    height: 125px;
     display: flex;
     justify-content: center;
     border: 1px solid black;
@@ -85,6 +87,7 @@ ul{
 }
 #carru{
     margin: 0 auto;
+    
     width:90%;
     display: flex;
 }
@@ -129,4 +132,53 @@ ul{
     width: 40%;
     padding: 10px;
    
+}
+video{
+    border-radius: 10px;
+}
+.carousel-container {
+   position: relative;
+   width: 85%;
+    margin: auto;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-numbers {
+    position: absolute;
+    top: 100%; /* Colocar los números por debajo de las imágenes */
+    margin-top: 10px; /* Agregar un margen de 10px desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.number {
+    height: 15px;
+    width: 15px;
+    margin-top:225px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+.number.active {
+    background-color:  white;
 }

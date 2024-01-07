@@ -38,8 +38,26 @@
     <section class="centro">
         <section class="recomendados">
             <h2 class="recomendadosh2">Recien agregados</h2>
-            <img src="Imagenes/caru.jpg" alt="" width="300" id="carru">
-            <hr style="margin-top: 40px; ">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="Imagenes/foto1.jpg" alt="Imagen 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Imagenes/foto2.png" alt="Imagen 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Imagenes/foto3.png" alt="Imagen 3">
+                </div>
+            
+                <div class="carousel-numbers">
+                    <span class="number" onclick="currentSlide(1)">1</span>
+                    <span class="number" onclick="currentSlide(2)">2</span>
+                    <span class="number" onclick="currentSlide(3)">3</span>
+                </div>
+            </div>
+        
+            
+            <hr style="margin-top: 400px; ">
             <h2 class="recomendadosh2">Series Recomendadas laraalalal</h2>
             <div class="vidrecs">
                 
@@ -60,6 +78,45 @@
             </div>
         </section>
     </section>
-  
+    <script>
+        let currentSlideIndex = 0;
+        showSlide(currentSlideIndex);
+    
+        function currentSlide(n) {
+            clearInterval(slideInterval);
+            showSlide(currentSlideIndex = n - 1);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+    
+        function nextSlide() {
+            showSlide(currentSlideIndex += 1);
+        }
+    
+        function showSlide(n) {
+            const slides = document.getElementsByClassName('carousel-slide');
+            const numbers = document.getElementsByClassName('number');
+    
+            if (n >= slides.length) {
+                currentSlideIndex = 0;
+            }
+    
+            if (n < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+    
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+    
+            for (let i = 0; i < numbers.length; i++) {
+                numbers[i].className = numbers[i].className.replace(' active', '');
+            }
+    
+            slides[currentSlideIndex].style.display = 'block';
+            numbers[currentSlideIndex].className += ' active';
+        }
+    
+        let slideInterval = setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
