@@ -29,7 +29,7 @@
 
            
         <ul>
-            <a href=""><li class="opcion"><i class="fa-solid fa-user"></i></li></a>
+            <a href="iniciarsesion.php"><li class="opcion"><i class="fa-solid fa-user"></i></li></a>
             <a href=""><li class="opcion"><i class="fa-solid fa-bars fa-xl"></i></li></a>
         </ul>
     </nav>
