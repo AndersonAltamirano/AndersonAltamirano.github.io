@@ -87,8 +87,8 @@
             </div>
         </section>
         <div class="vidrecs-cel">
-            <h2 class="recomendadosh2" style="color: white;">Series Recomendadas</h2>
-
+            <h2 class="recomendadosh2" style="color: white;"> Series Recomendadas</h2>
+          
             <img src="Imagenes/dbs.jpe" alt="" class="vidrec-cel">
             <img src="Imagenes/elite.jpg" alt="" class="vidrec-cel">
             <img src="Imagenes/jujutsu.webp" alt="" class="vidrec-cel">
